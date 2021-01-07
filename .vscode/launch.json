@@ -9,7 +9,16 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/src/main.py",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "env": {"PYTHONPATH": "${workspaceFolder}"}
+        },
+        {
+          "name": "Python: Current File (External Terminal)",
+          "type": "python",
+          "request": "launch",
+          "program": "${workspaceFolder}/src/main.py",
+          "console": "externalTerminal",
+          "env": {"PYTHONPATH": "${workspaceFolder}"}
         }
     ]
 }

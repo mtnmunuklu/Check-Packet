@@ -1,7 +1,7 @@
-
-
-def hello_word():
-    print("Hello Word")
+from src.app.file import File
 
 if __name__ == "__main__":
-    hello_word()
+    myfile = File()
+    myfile.read_from_file()
+    myfile.parse_xml()
+    myfile.write_to_excel()
