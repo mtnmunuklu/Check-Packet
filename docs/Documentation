@@ -1,0 +1,43 @@
+ReportPacket
+------------
+ID
+Name,
+AuthorName
+CreateDate
+Version
+Description
+IsSystem
+
+ReportPacket --> LSource
+------------
+ID
+Name
+WatchInterval
+Path
+FileName
+RotatedFileName
+FileNameStatic
+SourceType
+LgsIconType
+DeleteOldFile
+
+ReportPacket --> LSource --> IndexConfigs
+------------
+DoIndex
+IndexColumns
+
+
+ReportPacket --> PList
+--------
+ID
+LogSourceID
+Name
+CreateDate
+CatCode
+
+
+
+
+
+Packet Name(ReportPacket:Name), Packet Version(ReportPacket:Version), Packet Description(ReportPacket:Description), Log Source ID(LSource:ID), Log Source Name(LSource:Name), Log Source WatchInterval(LSource:WatchInterval), Log Source Path(LSource:Path), Log Source FileName(LSource:FileName), Log Source Rotated FileName(LSource:RotatedFileName), Log Source FileName Static (LSource:FileNameStatic),
+Log Source Type(LSource:SourceType), Log Source Icon Type (LSource:LgsIconType), Log Source Delet Old File(LSource:DeleteOldFile), Log Source Index(LSource:DoIndex), Log Source Index Columns(IndexConfigs:DoIndex), Log Source Index Columns(IndexConfigs:IndexColumns), Plugin ID(PList:ID), Plugin Name(PList:Name), Plugin Category Code(PList:CatCode)
